@@ -1,0 +1,17 @@
+{
+    "version": 3,
+    "mappings": "AQAA,AAAA,IAAI,CAAA;EACA,UAAU,EAAE,GAAG;CAClB",
+    "sources": [
+        "main.scss",
+        "base/_functions.scss",
+        "base/_mixins.scss",
+        "base/_typography.scss",
+        "base/_utilities.scss",
+        "base/_variables.scss",
+        "layout/_footer.scss",
+        "layout/_header.scss",
+        "layout/_base.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
