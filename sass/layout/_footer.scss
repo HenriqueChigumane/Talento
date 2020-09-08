@@ -1,0 +1,27 @@
+.footer{
+     grid-row: 6/7;
+     grid-column: 2/3;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin-bottom: 10rem;
+    &__info{
+        
+    }
+    &__social{
+    display: flex;
+    list-style: none;
+        &-item{
+           padding-right: 1rem; 
+           margin-top: 2rem; 
+        }
+        &-item svg{
+           fill: black;
+            width: 3rem;
+            height: 3rem;
+        }
+    }
+    &__adress{
+        font-size: 1.75rem;
+    }
+}
