@@ -4,7 +4,7 @@ const figure=document.getElementById("123");
 const list= figure.closest("ul");
 
 function createRequest(url,method) {
-    return fetch(url).then(response=>{return response.json();});
+    return fetch(url,{header}).then(response=>{return response.json();});
 }
  
 
@@ -28,9 +28,9 @@ function createNode(id,author,src) {
   
 }
 
-galleryBtn.addEventListener("click", event=>{
-    event.preventDefault();
-    loadImages();
+// galleryBtn.addEventListener("click", event=>{
+//     event.preventDefault();
+//     loadImages();
 
-})
-
+// })
+ 
