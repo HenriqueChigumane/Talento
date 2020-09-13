@@ -61,8 +61,10 @@ flex: 0 0 50%;
         }
         textarea{
             grid-column: 1/-1;
-            width: 100%
+            width: 100%;
+           padding: 1rem;
         }
+    
         .btn{
          grid-column: 1/-1;
             width: 100%;

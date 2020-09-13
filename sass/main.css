@@ -94,6 +94,7 @@
 .contact form textarea {
   grid-column: 1/-1;
   width: 100%;
+  padding: 1rem;
 }
 
 .contact form .btn {
