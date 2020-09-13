@@ -1,0 +1,106 @@
+.menu{
+    width: auto;
+    height: 1rem;
+    position: relative;
+    display: block;
+    z-index: 10001;
+    &__span{
+        display: block;
+        width: 3rem;
+        height: .3rem ;
+        background: $color-black;
+        &::after,&::before{
+            width: 3rem;
+            height: .3rem ;
+            content: "";
+            display: block; 
+            background: currentColor;
+            transition: all .3s
+        }
+        &::after{  
+            transform: translateY(-1.2rem);
+        }
+        &::before{
+            transform: translateY(.9rem);
+        } 
+    }
+}
+#menu{
+    width: 5rem;
+    height: 3rem;
+    position: absolute;
+    transform: translateY(-50%) translateX(-20%);
+    opacity: 0;
+    z-index: 10001;
+}
+#menu:checked{
+    position: fixed;
+}
+#menu:checked ~ {
+    .menu__span{
+        background-color: transparent;
+        &::after{
+            position: fixed;
+            transform: translateY(-.4rem) rotate(45deg);
+            background-color: $color-white;
+        }
+        &::before{
+            transform: translateY(-.4rem) rotate(-45deg);
+            background-color: $color-white;
+            position: fixed;
+        }
+    }
+}
+.nav{
+    
+    position: fixed;
+    width: 98.79vw;
+    height: 100vh;
+    background: $color-primary;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    //Animation
+     opacity: 0;
+     transform: translateX(95%);
+     transition: transform .28s ease-in-out .02s, opacity .03s ease-in-out .3s;
+    &__slide{
+        opacity: 1;
+        transform: translateX(0);
+        transition: transform .28s ease-in-out .02s, opacity .03s ease-in-out ;
+    }
+    
+    &__item{
+        display: block;
+        font-size: 3.2rem;
+        font-weight: 200;
+        color: $color-white; 
+        padding: 2rem 6rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-bottom: 1rem ;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        // &:not(:last-of-type){
+           
+        // }
+        &::after{
+            content: "";
+            width: 4%;height: .175rem;
+            //transform: translateX(-1%);
+            background: currentColor;
+            display: block;
+            transition: width .3s ease .04s, 
+        }
+        &:hover::after{
+            width: 130%;  
+            ;
+        }
+    }
+
+}
+
