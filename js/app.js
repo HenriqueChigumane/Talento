@@ -28,8 +28,5 @@ function createNode(id,author,src) {
   
 }
 
-// galleryBtn.addEventListener("click", event=>{
-//     event.preventDefault();
-//     loadImages();
 
-// })
+
