@@ -3,7 +3,7 @@ const formdata = document.querySelector(".contact form");
 const close = document.querySelector(".contact__close");
 const nav =document.querySelector("nav");
 
-const form=document.querySelector("#contactSubmision");
+var form=document.querySelector("#contactSubmision");
 
 document.getElementById("menu").addEventListener("click", ()=>{
 nav.classList.toggle("nav__slide");
@@ -33,17 +33,3 @@ close.addEventListener("click", execusao);
 
 
 //APP
-form.addEventListener("click",(event) =>{
-    let entry ={};
-    let entryMsg =""
-    event.preventDefault();
-    formdata.querySelectorAll("input").forEach((elmt,idx) =>{
-       const name= elmt.name;
-       const value=elmt.value;
-        entry = Object.assign({[name]:value},entry);
-        console.log(entry,`${name}`);
-        entryMsg += `${name}: ${value} \n`
-    });
-   entryMsg+= "Mensagem: " +formdata.querySelector("textarea").value;
-   console.log(entryMsg)
-});
