@@ -239,9 +239,16 @@
 }
 
 .title {
-  width: 50%;
   margin: 10rem auto 12rem auto;
   text-align: center;
+}
+
+.title--wide {
+  width: 90%;
+}
+
+.title--small {
+  width: 50%;
 }
 
 .title__home {
@@ -282,9 +289,16 @@ body {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
-  background: #000;
   grid-column: 1/-1;
   padding: 0 15rem 10rem 15rem;
+}
+
+.gallery--black {
+  background: #000;
+}
+
+.gallery--white {
+  background: #ffffff;
 }
 
 .gallery__list {
@@ -370,10 +384,23 @@ body {
 .btn {
   font-size: 2rem;
   list-style: none;
-  color: white;
   text-decoration: none;
   outline: none;
   border: none;
+}
+
+.btn--black {
+  color: #000;
+  -webkit-transition: color .25s ease .25s;
+  transition: color .25s ease .25s;
+}
+
+.btn--black:hover {
+  color: white !important;
+}
+
+.btn--white {
+  color: #ffffff;
 }
 
 .btn-1 {

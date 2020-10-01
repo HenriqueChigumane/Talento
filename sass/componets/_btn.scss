@@ -1,7 +1,16 @@
 .btn{
     font-size: 2rem;
     list-style: none;
-    color: white;
+    &--black{
+        color: $color-black;
+        transition: color .25s ease .25s;
+        &:hover{
+            color: white !important;
+        }
+    }
+    &--white{
+        color:$color-white;    
+    }
     text-decoration: none;
     outline: none;
     border: none;
