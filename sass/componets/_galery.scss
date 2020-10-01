@@ -1,6 +1,11 @@
 .gallery{
 grid-row: 3/4;
-background: $color-black; 
+&--black{
+    background: $color-black; 
+}
+&--white{
+    background: $color-white; 
+}
 grid-column: 1/-1;
 padding:0 15rem 10rem 15rem;  
     &__list{
@@ -65,3 +70,4 @@ padding:0 15rem 10rem 15rem;
         text-align: center;
     }
 }
+ 

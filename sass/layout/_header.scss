@@ -19,8 +19,12 @@
    
 }
  .title{
-      
+      &--wide{
+           width: 90%;
+      }
+      &--small{
         width: 50%;
+     }
         margin: 10rem auto 12rem auto;
         
         text-align: center;
